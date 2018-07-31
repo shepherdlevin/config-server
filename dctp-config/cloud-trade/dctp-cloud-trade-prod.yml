@@ -1,0 +1,27 @@
+#from=local-prod
+spring.datasource:
+        url: jdbc:mysql://localhost:3306/dctp?characterEncoding=UTF-8&allowMultiQueries=true
+        username: root
+        password: 12345
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        maxActive: 20
+        initialSize: 1
+        maxWait: 60000
+        minIdle: 1
+spring.redis:
+  database: 0
+  host: 192.168.1.100
+  port: 6379
+  timeout: 0
+  password: aA123456
+  pool:
+    max-active: 8
+    max-wait: -1
+    max-idle: 8
+    min-idle: 0
+producer.config:
+   matchTradeTopic: matchTrade
+   rtQutoesTopic: rtQutoes
+   dealProfitTopic: dealProfit
+   dealWalletTopic: dealWallet
