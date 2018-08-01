@@ -70,4 +70,4 @@ producer.config:
 
    deal:
      time:
-       span: 09:30-11:30,13:00-15:00
+       span: 123
